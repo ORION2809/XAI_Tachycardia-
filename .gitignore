@@ -102,9 +102,12 @@ desktop.ini
 *.h5
 *.hdf5
 
-# Large data files (uncomment if needed)
-# data/raw/
-# data/external/
+# Large data files (exceed GitHub 100MB limit)
+data/processed/beats.npy
+data/processed/train_test_split.npz
+data/processed/features.npy
+*.npy
+*.npz
 
 # Logs
 *.log
@@ -118,3 +121,7 @@ logs/
 # Microsoft Office temporary files
 ~$*
 *.docx
+
+# Large processed data files
+data/processed/*.npy
+data/processed/*.npz
